@@ -54,11 +54,60 @@ img {
 }
 
 .container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
+
+.button-burger {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+
+.icon-burger {
+  stroke: #2e2f42;
+}
+
+@media screen and (min-width: 768px) {
+  .button-burger {
+    display: none;
+  }
+}
+
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+/* .container {
   width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
 /* Не розумію чи треба */
 
@@ -78,11 +127,12 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.header-block {
+/* .header-block {
   display: flex;
   height: 72px;
   align-items: center;
-}
+} */
+
 .nav-bar {
   display: flex;
   align-items: center;
@@ -90,9 +140,9 @@ img {
   margin-right: 332px;
 }
 
-.nav-bar:last-child {
+/* .nav-bar:last-child {
   margin-right: 0px;
-}
+} */
 
 .logo-studio-web {
   font-family: 'Raleway', sans-serif;
@@ -102,7 +152,6 @@ img {
   font-size: 18px;
   line-height: 1.17;
   color: var(--logo);
-  margin-right: 76px;
 }
 
 .logo-studio {
@@ -117,7 +166,7 @@ img {
   list-style-type: none;
 }
 
-.nav-bar-item {
+/* .nav-bar-item {
   font-weight: 500;
   letter-spacing: 0.02em;
   font-size: 16px;
@@ -127,18 +176,18 @@ img {
   padding-bottom: 27px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-}
+} */
 
-.nav-bar-item:hover,
+/* .nav-bar-item:hover,
 .nav-bar-item:focus {
   color: #404bbf;
-}
+} */
 
-.current {
+/* .current {
   color: #404bbf;
-}
+} */
 
-.current::after {
+/* .current::after {
   content: '';
   display: block;
   position: absolute;
@@ -148,38 +197,51 @@ img {
   bottom: -1px;
   background-color: #404bbf;
   border-radius: 2px;
-}
+} */
 
 .address-header {
   font-style: normal;
   margin-left: 332px;
 }
-.address-header-item {
+
+/* .address-header-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--address);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.address-list {
+/* .address-list {
   display: flex;
   gap: 40px;
-}
+} */
 
-.address-list:last-child {
+/* .address-list:last-child {
   margin-right: 0px;
-}
+} */
 
-.address-header-item:hover,
+/* .address-header-item:hover,
 .address-header-item:focus {
   color: #404bbf;
-}
+} */
 
-ul,
+/* ul,
 ol {
   padding-left: 0;
+} */
+
+@media screen and (max-width: 767px) {
+  .nav-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address-item {
+    display: none;
+  }
 }
 
 /* Перша секція */
@@ -292,6 +354,7 @@ ol {
 }
 
 /* Третя секція */
+
 .what-are-we-doing {
   font-weight: 700;
   font-size: 36px;
@@ -316,6 +379,7 @@ ol {
 }
 
 /* Четверта секція */
+
 .our-team-section {
   background: #f4f4fd;
   padding-top: 120px;
