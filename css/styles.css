@@ -102,6 +102,12 @@ img {
   height: 70px;
 }
 
+@media screen and (min-width: 768px) {
+  .header-block {
+    height: 72px;
+  }
+}
+
 /* .container {
   width: 1158px;
   margin: 0 auto;
@@ -133,12 +139,20 @@ img {
   align-items: center;
 } */
 
-.nav-bar {
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+/* .nav-bar {
   display: flex;
   align-items: center;
   gap: 40px;
   margin-right: 332px;
-}
+} */
 
 /* .nav-bar:last-child {
   margin-right: 0px;
@@ -152,6 +166,7 @@ img {
   font-size: 18px;
   line-height: 1.17;
   color: var(--logo);
+  margin-right: 120px;
 }
 
 .logo-studio {
@@ -166,7 +181,7 @@ img {
   list-style-type: none;
 }
 
-/* .nav-bar-item {
+.nav-bar-item {
   font-weight: 500;
   letter-spacing: 0.02em;
   font-size: 16px;
@@ -176,18 +191,18 @@ img {
   padding-bottom: 27px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-} */
+}
 
-/* .nav-bar-item:hover,
+.nav-bar-item:hover,
 .nav-bar-item:focus {
   color: #404bbf;
-} */
+}
 
-/* .current {
+.current {
   color: #404bbf;
-} */
+}
 
-/* .current::after {
+.current::after {
   content: '';
   display: block;
   position: absolute;
@@ -197,35 +212,38 @@ img {
   bottom: -1px;
   background-color: #404bbf;
   border-radius: 2px;
-} */
+}
 
 .address-header {
   font-style: normal;
-  margin-left: 332px;
 }
 
-/* .address-header-item {
+.address-header-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--address);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
-/* .address-list {
-  display: flex;
-  gap: 40px;
-} */
+@media screen and (min-width: 1158px) {
+  .address-list {
+    display: flex;
+    gap: 40px;
+  }
+}
 
-/* .address-list:last-child {
-  margin-right: 0px;
-} */
+@media screen and (min-width: 1158px) {
+  .address-list:last-child {
+    margin-right: 0px;
+  }
+}
 
-/* .address-header-item:hover,
+.address-header-item:hover,
 .address-header-item:focus {
   color: #404bbf;
-} */
+}
 
 /* ul,
 ol {
