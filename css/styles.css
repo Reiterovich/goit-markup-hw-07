@@ -1185,6 +1185,91 @@ ol {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .block-footer {
+    display: flex;
+    align-items: baseline;
+    padding-left: 96px;
+    padding-right: 96px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-p {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 264px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .block-footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    column-gap: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-logo-p {
+    margin-right: 120px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-direction {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-social-list {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .social-block-footer {
+    margin-right: 80px;
+  }
+}
+
 /* .footer {
   background: var(--footer-backgraund);
   padding-top: 100px;
@@ -1458,7 +1543,7 @@ ol {
   border-top: none;
 }
 
-/* Бекдроп */
+/* Модальне вікно */
 
 .backdrop {
   top: 0;
