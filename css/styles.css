@@ -209,6 +209,18 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .address-item-list {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-header-item {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
 .address-header-item:hover,
 .address-header-item:focus {
   color: #404bbf;
@@ -295,7 +307,7 @@ ol {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 429px) {
   .hero-back {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -305,9 +317,9 @@ ol {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 429px),
+  screen and (min-resolution: 192dpi) and (min-width: 429px),
+  screen and (min-resolution: 2dppx) and (min-width: 429px) {
   .hero-back {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -317,7 +329,7 @@ ol {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 769px) {
   .hero-back {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -327,9 +339,9 @@ ol {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
-  screen and (min-resolution: 192dpi) and (min-width: 1158px),
-  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px),
+  screen and (min-resolution: 192dpi) and (min-width: 769px),
+  screen and (min-resolution: 2dppx) and (min-width: 769px) {
   .hero-back {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -383,7 +395,7 @@ ol {
   background-color: #404bbf;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 429px) {
   .hero-back {
     max-width: 768px;
   }
@@ -403,7 +415,7 @@ ol {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 769px) {
   .hero-back {
     max-width: 1440px;
     padding-top: 188px;
@@ -817,14 +829,13 @@ ol {
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    margin-bottom: 64px;
     margin-left: 0px;
     margin-right: 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .our-team-card:nth-child(n + 3) {
+  .our-team-card {
     margin-bottom: 0px;
   }
 }
@@ -834,7 +845,7 @@ ol {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 64px 24px;
   }
 }
 
@@ -966,7 +977,7 @@ ol {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 72px 16px;
 }
 
 .customers-list-item {
@@ -1006,7 +1017,7 @@ ol {
   .customers-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
     padding-left: 92px;
     padding-right: 92px;
   }
@@ -1015,6 +1026,13 @@ ol {
 @media screen and (min-width: 768px) {
   .customers-list-item {
     width: calc((100% - 48px) / 3);
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list-item:nth-child(n + 3) {
+    margin-bottom: 0px;
   }
 }
 
@@ -1245,8 +1263,7 @@ ol {
   .block-footer {
     display: flex;
     align-items: baseline;
-    padding-left: 96px;
-    padding-right: 96px;
+    max-width: 584px;
     flex-wrap: wrap;
     column-gap: 24px;
   }
@@ -1602,6 +1619,7 @@ ol {
 /* Модальне вікно */
 
 .backdrop {
+  overflow: scroll;
   top: 0;
   left: 0;
   position: fixed;
@@ -1615,10 +1633,10 @@ ol {
 
 .window-model {
   position: absolute;
-  top: 50%;
+  top: 96px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 392px;
+  transform: translate(-50%);
+  width: calc(100% - 18px);
   min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1626,6 +1644,12 @@ ol {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 16px 24px 16px;
+}
+
+@media screen and (min-width: 429px) {
+  .window-model {
+    width: 392px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1848,11 +1872,13 @@ ol {
   padding-top: 80px;
   padding-left: 40px;
   padding-bottom: 40px;
+  padding-right: 38px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .mobile-menu.is-open {
@@ -1938,5 +1964,6 @@ ol {
 
 .social-list-mobile-menu {
   display: flex;
-  gap: 56px;
+  max-width: 328px;
+  justify-content: space-between;
 }
